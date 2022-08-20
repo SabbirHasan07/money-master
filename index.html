@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8fbd7208a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <head>
+        <h1 class="text-6xl font-bold text-center mt-8 text-teal-600">Money Master <i class="fa-solid fa-money-check-dollar text-yellow-600"></i></h1>
+    </head>
+    <main>
+        <section class="m-32">
+            <div class="grid grid-cols-3 gap-1">
+                <div class="col-span-2">
+                    <img src="images/money.png" alt="">
+                </div>
+                <div class="bg-blue-100 p-5 rounded-lg">
+                   <div>
+                    <h2 class="text-4xl font-bold text-center">Income</h2>
+                    <div class="flex mt-20">
+                        <p class="text-3xl mr-6 ">Income:</p>
+                        <input id="income" class="text-2xl" type="text" placeholder="Enter Your amounts">
+                    </div>
+                   </div>
+                   <div class="mt-20">
+                    <h2 class="text-4xl font-bold text-center">Expencess</h2>
+                    <div class="flex mt-20">
+                        <p class="text-3xl mr-6 ">Rent:</p>
+                        <input id="rent" class="text-2xl" type="text" placeholder="Enter Your amaounts">
+                    </div>
+                    <div class="flex mt-20">
+                        <p class="text-3xl mr-6 ">Food:</p>
+                        <input id="food" class="text-2xl" type="text" placeholder="Enter Your amounts">
+                    </div>
+                    <div class="flex mt-20">
+                        <p class="text-3xl mr-6 ">Others:</p>
+                        <input id="others" class="text-2xl" type="text" placeholder="Enter Your amounts">
+                    </div>
+
+                   </div>
+                   <div>
+                    <Button id="claculate" class="text-4xl mt-20 bg-blue-400 px-4 py-2 rounded-lg text-white">Calculate</Button>
+                   </div>
+                   <div>
+                    <p class="text-2xl font-bold text-center mt-20" >Total-Expencess: <Span id="total-expencess"> 00 </Span> Taka</p>
+                    <br><p class="text-2xl font-bold text-center">Balance: <Span id="balance"> 00 </Span> Taka</p>
+                   </div>
+                   <div>
+                    <h2 class="text-4xl font-bold text-center mt-20">Savings</h2>
+                        <div class="flex mt-20">
+                            <p class="text-3xl mr-4 ">Save:</p>
+                            <input id="saving" class="text-xl mr-2" type="text" placeholder="Enter Your amounts">
+                            <p class="text-3xl m-2">%</p>
+                            <button id="save" class="text-2xl bg-blue-400 px-2 rounded-lg text-white">Save</button>
+
+                        
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-center mt-20" >Saving Amount: <Span id="saving-amount"> 00 </Span> Taka</p>
+                        <br><p class="text-2xl font-bold text-center mb-20">Remaining Balance: <Span id="remain-balance"> 00 </Span> Taka</p>
+                       </div>
+                   </div>
+
+
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
